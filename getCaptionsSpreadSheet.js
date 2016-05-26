@@ -13,14 +13,15 @@ if (!program.output) {
 }
 
 if (!process.env.GOOGLE_DRIVE_CLIENT_ID ||
-    !process.env.GOOGLE_DRIVE_CLIENT_SECRET) {
+    !process.env.GOOGLE_DRIVE_CLIENT_SECRET ||
+    !process.env.GOOGLE_DRIVE_FILE_ID) {
     console.log("Err: Make sure you have GOOGLE_DRIVE_CLIENT_ID and GOOGLE_DRIVE_CLIENT_SECRET environment variables.");
     process.exit(1);
 }
 
 var sheets = [{
     dest: program.output,
-    fileId: '11dYozwAxB26B4vrKi2l2KCnw83T9Fr4JzEKhKneokog',
+    fileId: process.env.GOOGLE_DRIVE_FILE_ID,
     gid: '0',
 }];
 

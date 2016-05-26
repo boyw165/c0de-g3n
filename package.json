@@ -1,0 +1,17 @@
+{
+  "name": "gen-codes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "convertCsv2Code.js",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "csv": "^1.1.0",
+    "fast-csv": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
